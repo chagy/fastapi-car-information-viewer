@@ -1,3 +1,8 @@
+<style>
+    .btn {
+        margin: 0.2rem;
+    }
+</style>
 <div>
     <h2>{{ car["year"] }} {{ car["make"] }} {{ car["model"] }}</h2>
 
@@ -17,4 +22,6 @@
     {% endif %} 
 
     <p>ID: {{id}}</p>
+
+    <a href="/edit?id={{id}}" class="btn btn-dark">Edit</a>
 </div>
